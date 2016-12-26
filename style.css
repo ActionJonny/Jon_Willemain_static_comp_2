@@ -1,0 +1,342 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Slabo 27px', serif;
+}
+
+.background-photo {
+  height: 100%;
+  width: 100%;
+  background: url(images/beatles-main.jpg) no-repeat;
+  background-position: center;
+  filter: blur(5px);
+  position: fixed;
+  z-index: -1;
+}
+
+.title {
+  font-size: 60px;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.icons img:hover {
+  background-color: #292929;
+}
+
+section {
+  justify-content: center;
+  align-items: center;
+  /*flex-wrap: wrap;*/
+}
+
+.presented {
+  background-color: white;
+  color: black;
+  width: 80%;
+  text-align: center;
+  margin-left: 10%
+}
+
+.Fab-Four {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Fab-Four img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-left: 20px;
+}
+
+.John,
+.Paul,
+.George,
+.Ringo {
+  margin-top: 30px;
+  width: 39%;
+  height: 250px;
+  background-color: #fff;
+  color: #fff;
+}
+
+.John,
+.George {
+  margin-left: 10%;
+}
+
+.Paul,
+.Ringo {
+  margin-right: 10%;
+}
+
+h3 {
+  background-color: #181818;
+  margin-top: 0;
+  border: 2px solid #fff;
+}
+
+h4 {
+  color: #181818;
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+#paragraph-items {
+  width: 65%;
+  font-size: 13px;
+  color: #181818;
+  margin-top: 20px;
+  margin-left: 30%;
+  text-align: left;
+}
+
+h5 {
+  color: #181818;
+  margin-top: 180px;
+  font-size: 30px;
+  border-top: 2px solid #181818;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer {
+  margin-top: 50px;
+  height: 140px;
+  background-color: #181818;
+}
+
+footer span {
+  float: left;
+  font-size: 20px;
+  margin-left: 12%;
+  margin-top: 20px;
+}
+
+footer div {
+  width: 29%;
+  height: 50px;
+  background-color: #292929;
+  display: inline-block;
+  margin: 60px 15px 0 15px;
+  padding-top: 10px;
+  padding-left: 10px;
+  text-align: left;
+}
+
+footer div img {
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin-right: 20px;
+}
+
+@media(min-width: 320px) {
+  .John,
+  .Paul,
+  .George,
+  .Ringo {
+    flex: 0 0 100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 380px;
+  }
+
+  .Fab-Four img {
+    float: none;
+    margin-left: 0;
+    margin-top: -10px;
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+
+  h5 {
+    margin-top: -3%;
+  }
+
+  #paragraph-items {
+    width: 90%;
+    margin-left: 5%;
+    text-align: left;
+  }
+
+  footer {
+    margin-top: 25px;
+    height: 240px;
+  }
+
+  footer div {
+    height: 50px;
+    width: 97%;
+    margin-top: 5px;
+    margin-left: 0;
+  }
+}
+
+@media(min-width: 500px) {
+  .John,
+  .Paul,
+  .George,
+  .Ringo {
+    height: 300px;
+  }
+
+  .Fab-Four {
+    justify-content: space-between;
+    margin-left: 5%;
+  }
+
+  .Fab-Four img {
+    float: left;
+    margin-left: 7%;
+    margin-top: 55px;
+  }
+
+  #paragraph-items {
+    width: 60%;
+    margin-left: 35%;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  h5 {
+    margin-top: -20px;
+  }
+}
+
+@media(min-width: 670px) {
+  .John,
+  .Paul,
+  .George,
+  .Ringo {
+    flex: 0 1 40%;
+    height: 450px;
+  }
+
+  .John,
+  .George {
+    margin-left: 5%;
+  }
+
+  .Paul,
+  .Ringo {
+    margin-right: 5%;
+  }
+
+  .Fab-Four img {
+    margin-top: 0;
+  }
+
+  #paragraph-items {
+    width: 75%;
+    margin-left: 13%;
+    margin-top: 50%;
+  }
+
+  h4 {
+    position: absolute;
+    width: 15%;
+    margin-top: 5%;
+    margin-left: 20%;
+  }
+}
+
+@media(min-width: 900px) {
+  .Fab-Four img {
+    margin-top: 5%;
+  }
+
+  h4 {
+    margin-left: 15%;
+    font-size: 30px;
+  }
+
+  #paragraph-items {
+    margin-top: 45%;
+  }
+
+  footer {
+    height: 140px;
+  }
+
+  footer span {
+    float: left;
+    font-size: 20px;
+    margin-left: 2%;
+    margin-top: 20px;
+    position: absolute;
+  }
+
+  footer div {
+    width: 25%;
+    height: 50px;
+    margin-top: 60px;
+  }
+
+  footer .sgt-pepper {
+    width: 35%;
+  }
+}
+
+@media(min-width: 1175px){
+  .John,
+  .Paul,
+  .George,
+  .Ringo  {
+    flex: 0 0 45%;
+    height: 305px;
+  }
+
+  .John,
+  .George {
+    margin-left: 0;
+  }
+
+  .Paul,
+  .Ringo {
+    margin-right: 5%;
+  }
+
+  .Fab-Four {
+    justify-content: space-between;
+    margin-left: 5%;
+  }
+
+  .Fab-Four img {
+    height: 150px;
+    width: 150px;
+    margin-top: 4%;
+  }
+
+  h4 {
+    margin-top: 0%;
+    margin-left: 10%;
+    width: 20%;
+  }
+
+  h5 {
+    position: relative;
+    margin-top: auto;
+  }
+
+  #paragraph-items {
+    margin-top: 11%;
+    margin-left: 38%;
+    width: 56%;
+    font-size: 14px;
+  }
+}
