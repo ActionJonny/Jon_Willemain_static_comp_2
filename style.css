@@ -142,7 +142,7 @@ footer div img {
   margin-right: 20px;
 }
 
-@media(min-width: 320px) {
+@media screen and (min-width: 320px) {
   .John,
   .Paul,
   .George,
@@ -186,7 +186,7 @@ footer div img {
   }
 }
 
-@media(min-width: 500px) {
+@media screen and (min-width: 500px) {
   .John,
   .Paul,
   .George,
@@ -218,7 +218,7 @@ footer div img {
   }
 }
 
-@media(min-width: 670px) {
+@media screen and (min-width: 670px) {
   .John,
   .Paul,
   .George,
@@ -255,7 +255,7 @@ footer div img {
   }
 }
 
-@media(min-width: 900px) {
+@media screen and (min-width: 900px) {
   .Fab-Four img {
     margin-top: 5%;
   }
@@ -292,7 +292,7 @@ footer div img {
   }
 }
 
-@media(min-width: 1175px){
+@media screen and (min-width: 1175px){
   .John,
   .Paul,
   .George,
